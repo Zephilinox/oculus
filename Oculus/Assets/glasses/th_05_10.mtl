@@ -1,0 +1,66 @@
+
+newmtl 0.BaseMaterial
+Kd  0.43137244 0.43137244 0.43137244
+Ks  0.2 0.2 0.2
+Ka  00 00 00
+d  01
+Ns  00
+illum 2
+
+
+
+
+newmtl 1.ReflectiveMaterial
+Kd  0.43137244 0.43137244 0.43137244
+Ks  0.8 0.8 0.8
+Ka  00 00 00
+d  01
+Ns  925
+illum 2
+
+
+
+
+newmtl 2.ReflectiveMaterial
+Kd  0.40303 0.33048598 0.24593956
+Ks  0.8 0.8 0.8
+Ka  00 00 00
+d  01
+Ns  925
+illum 2
+
+
+
+
+newmtl 3.ReflectiveMaterial
+Kd  0.9725491 0.9725491 0.9725491
+Ks  0.8 0.8 0.8
+Ka  00 00 00
+d  01
+Ns  925
+illum 2
+
+
+
+
+newmtl 4.ReflectiveMaterial
+Kd  0.30196072 0.29411756 0.29803916
+Ks  0.8 0.8 0.8
+Ka  00 00 00
+d  01
+Ns  925
+illum 2
+
+
+
+
+newmtl 5.ReflectiveMaterial
+Kd  0.4321697 0.4321697 0.4321697
+Ks  0.8 0.8 0.8
+Ka  00 00 00
+d  01
+Ns  925
+illum 2
+
+
+
