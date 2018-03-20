@@ -435,6 +435,7 @@
     <Compile Include="Assets\VRTK\Scripts\Utilities\VRTK_SDKTransformModify.cs" />
     <Compile Include="Assets\VRTK\Scripts\Utilities\VRTK_SharedMethods.cs" />
     <Compile Include="Assets\VRTK\Scripts\Utilities\VRTK_Simulator.cs" />
+    <Compile Include="Assets\moveshit.cs" />
     <Compile Include="Assets\voxel_scifi_free\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\voxel_scifi_free\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
     <Compile Include="Assets\voxel_scifi_free\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />

@@ -11,7 +11,6 @@ public class Spawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
@@ -20,10 +19,10 @@ public class Spawner : MonoBehaviour {
         if (timer > spawnDelay)
         {
             timer = 0;
-            GameObject gameobj = Instantiate(prefab);
-            gameobj.transform.position = transform.position;
-            gameobj.AddComponent<MoveTo>();
-            gameobj.GetComponent<MoveTo>().speed = speed;
+            //GameObject gameobj = Instantiate(prefab);
+            //gameobj.transform.position = transform.position;
+            //gameobj.AddComponent<MoveTo>();
+            //gameobj.GetComponent<MoveTo>().speed = speed;
         }
     }
 }
