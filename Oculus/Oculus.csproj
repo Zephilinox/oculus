@@ -186,6 +186,17 @@
     <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
     <Compile Include="Assets\OVR\Scripts\Util\OVRTrackedRemote.cs" />
     <Compile Include="Assets\OVR\Scripts\Util\OVRWaitCursor.cs" />
+    <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
+    <Compile Include="Assets\Scripts\ApplicationManager.cs" />
+    <Compile Include="Assets\Scripts\ChangeColor.cs" />
+    <Compile Include="Assets\Scripts\DragMe.cs" />
+    <Compile Include="Assets\Scripts\DragPanel.cs" />
+    <Compile Include="Assets\Scripts\DropMe.cs" />
+    <Compile Include="Assets\Scripts\PanelManager.cs" />
+    <Compile Include="Assets\Scripts\ResizePanel.cs" />
+    <Compile Include="Assets\Scripts\ScrollDetailTexture.cs" />
+    <Compile Include="Assets\Scripts\ShowSliderValue.cs" />
+    <Compile Include="Assets\Scripts\TiltWindow.cs" />
     <Compile Include="Assets\Spawner.cs" />
     <Compile Include="Assets\moveshit.cs" />
     <Compile Include="Assets\voxel_scifi_free\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
@@ -273,6 +284,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Cyberleaf Music - Chiptunes Lite\readme.txt" />
+    <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
+    <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
     <None Include="Assets\OVR\Editor\AndroidManifest.OVRSubmission.xml" />
     <None Include="Assets\OVR\Plugins\placeholder.txt" />
     <None Include="Assets\OVR\Resources\Cubemap Blit.shader" />
@@ -288,6 +301,7 @@
     <None Include="Assets\OVR\Resources\Unlit Transparent Color.shader" />
     <None Include="Assets\OVR\Shaders\OVRColorRampAlpha.shader" />
     <None Include="Assets\OVR\Shaders\Unlit Crosshair.shader" />
+    <None Include="Assets\Textures and Sprites\SF UI\Background\LICENSE.txt" />
     <None Include="Assets\voxel_scifi_free\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\voxel_scifi_free\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
     <None Include="Assets\voxel_scifi_free\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
