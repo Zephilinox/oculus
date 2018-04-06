@@ -364,7 +364,7 @@ public class OVRDebugInfo : MonoBehaviour
     void UpdateFOV()
     {
 #if UNITY_2017_2_OR_NEWER
-        OVRDisplay.EyeRenderDesc eyeDesc = OVRManager.display.GetEyeRenderDesc(UnityEngine.XR.XRNode.LeftEye);
+        OVRDisplay.EyeRenderDesc eyeDesc = OVRManager.display.GetEyeRenderDesc(UnityEngine.VR.VRNode.LeftEye);
 #else
 		OVRDisplay.EyeRenderDesc eyeDesc = OVRManager.display.GetEyeRenderDesc(UnityEngine.VR.VRNode.LeftEye);
 #endif
@@ -377,10 +377,10 @@ public class OVRDebugInfo : MonoBehaviour
     void UpdateResolutionEyeTexture()
     {
 #if UNITY_2017_2_OR_NEWER
-		OVRDisplay.EyeRenderDesc leftEyeDesc = OVRManager.display.GetEyeRenderDesc(UnityEngine.XR.XRNode.LeftEye);
-		OVRDisplay.EyeRenderDesc rightEyeDesc = OVRManager.display.GetEyeRenderDesc(UnityEngine.XR.XRNode.RightEye);
+		OVRDisplay.EyeRenderDesc leftEyeDesc = OVRManager.display.GetEyeRenderDesc(UnityEngine.VR.VRNode.LeftEye);
+		OVRDisplay.EyeRenderDesc rightEyeDesc = OVRManager.display.GetEyeRenderDesc(UnityEngine.VR.VRNode.RightEye);
 
-		float scale = UnityEngine.XR.XRSettings.renderViewportScale;
+		float scale = UnityEngine.VR.VRSettings.renderViewportScale;
 #else
 		OVRDisplay.EyeRenderDesc leftEyeDesc = OVRManager.display.GetEyeRenderDesc(UnityEngine.VR.VRNode.LeftEye);
 		OVRDisplay.EyeRenderDesc rightEyeDesc = OVRManager.display.GetEyeRenderDesc(UnityEngine.VR.VRNode.RightEye);

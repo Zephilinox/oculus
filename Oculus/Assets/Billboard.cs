@@ -16,7 +16,10 @@ public class Billboard : MonoBehaviour {
         {
             g.transform.LookAt(player.transform);
             Vector3 rot = g.transform.rotation.eulerAngles;
-            g.transform.rotation = Quaternion.Euler(-rot.x, rot.y - 180, 0);
+            g.transform.rotation = Quaternion.Euler(-rot.x, rot.y - 180, player.transform.rotation.eulerAngles.z);
+            //g.transform.rotation = Quaternion.Euler(-rot.x, player.transform.rotation.eulerAngles.y, player.transform.rotation.eulerAngles.z);
+
+            //g.transform.rotation = Quaternion.Euler(-rot.x, rot.y - 180, 0);
         }
-	}
+    }
 }

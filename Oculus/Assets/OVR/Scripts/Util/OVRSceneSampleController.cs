@@ -148,7 +148,7 @@ public class OVRSceneSampleController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.M))
 #if UNITY_2017_2_OR_NEWER
-			UnityEngine.XR.XRSettings.showDeviceView = !UnityEngine.XR.XRSettings.showDeviceView;
+			UnityEngine.VR.VRSettings.showDeviceView = !UnityEngine.VR.VRSettings.showDeviceView;
 #else
 			UnityEngine.VR.VRSettings.showDeviceView = !UnityEngine.VR.VRSettings.showDeviceView;
 #endif

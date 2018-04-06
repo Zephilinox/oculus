@@ -6,7 +6,7 @@ public class HeadgearUI : MonoBehaviour
 {
 
 	public bool insideHead;
-	bool isAttached = false;
+	public bool isAttached = false;
 	public GameObject head;
 	// Use this for initialization
 	void Start () {
@@ -18,7 +18,7 @@ public class HeadgearUI : MonoBehaviour
 	{
 		if (isAttached) 
 		{
-			gameObject.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 0.15f - Camera.main.transform.up * 0.015f;
+			gameObject.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 0.1f - Camera.main.transform.up * 0.03f;
 			gameObject.transform.rotation = Camera.main.transform.rotation;
 			gameObject.GetComponent<Rigidbody> ().isKinematic = true;
 		}

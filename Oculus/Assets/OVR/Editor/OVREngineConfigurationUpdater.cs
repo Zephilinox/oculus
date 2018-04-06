@@ -173,7 +173,7 @@ class OVREngineConfigurationUpdater
 
 				bool oculusFound = false;
 #if UNITY_2017_2_OR_NEWER
-				foreach (var device in UnityEngine.XR.XRSettings.supportedDevices)
+				foreach (var device in UnityEngine.VR.VRSettings.supportedDevices)
 #else
 				foreach (var device in UnityEngine.VR.VRSettings.supportedDevices)
 #endif
