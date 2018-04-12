@@ -6,8 +6,9 @@ public class MakeInvisible : MonoBehaviour
 {
     float timer;
     Color color;
-	// Use this for initialization
-	void Start ()
+
+    // Use this for initialization
+    void Start ()
     {
         color = GetComponent<MeshRenderer>().material.color;
     }
@@ -17,17 +18,19 @@ public class MakeInvisible : MonoBehaviour
     {
 		if (GetComponentInParent<HeadgearUI>().isAttached)
         {
-            if (color.a != 0)
+            if (color.a > 0.01f)
             {
                 timer += Time.deltaTime;
                 if (timer >= 0.01f)
                 {
                     color.a -= 0.02f;
+
                     GetComponent<MeshRenderer>().material.color = color;
+
                     timer = 0;
                 }
             }
-            else
+            else 
             {
                 GetComponent<MeshRenderer>().enabled = false;
             }
