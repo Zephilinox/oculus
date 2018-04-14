@@ -4,22 +4,23 @@ using UnityEngine;
 
 public class HeadgearUI : MonoBehaviour 
 {
-
+    Vector3 pos;
+    Quaternion rot;
 	public bool insideHead;
 	public bool isAttached = false;
 	public GameObject head;
 	// Use this for initialization
 	void Start () {
-		
-	}
+        head = Camera.main.gameObject;
+    }
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		if (isAttached) 
-		{
-			gameObject.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 0.1f - Camera.main.transform.up * 0.03f;
-			gameObject.transform.rotation = Camera.main.transform.rotation;
+		if (isAttached)
+        {
+            gameObject.transform.position = head.transform.position + head.transform.forward * 0.1f - head.transform.up * 0.03f;
+            gameObject.transform.rotation = head.transform.rotation;
 			gameObject.GetComponent<Rigidbody> ().isKinematic = true;
 		}
 	}
@@ -28,20 +29,23 @@ public class HeadgearUI : MonoBehaviour
 	{
 		if (other.gameObject.name == "Head")
 		{
-			gameObject.transform.GetChild (1).gameObject.SetActive (true);
+            for (int i = 1; i < transform.childCount; ++i)
+            {
+                transform.GetChild(i).gameObject.SetActive(true);
+            }
 
-			insideHead = true;
+            insideHead = true;
 		}
 	}
 
 	void OnTriggerExit(Collider other)
 	{
 		if (other.gameObject.name == "Head")
-		{
-			Debug.Log ("off head");
-			//gameObject.transform.GetChild (0).gameObject.SetActive (true);
-			gameObject.transform.GetChild (1).gameObject.SetActive (false);
-
+        {
+            for (int i = 1; i < transform.childCount; ++i)
+            {
+                transform.GetChild(i).gameObject.SetActive(false);
+            }
 			insideHead = false;
 		}
 	}

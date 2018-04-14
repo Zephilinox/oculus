@@ -25,32 +25,51 @@ public class moveshit : MonoBehaviour {
         if (dragging && move_ui)
         {
             controller = gameObject.GetComponent<NVRInteractableItem>().AttachedHands[0].gameObject;
+
             if (controller)
             {
-                if (Vector3.Distance(head.transform.position, controller.transform.position) < 0.5f
-                    && Vector3.Distance(head.transform.position, controller.transform.position) > 0.2f)
+                Vector3 head_forward_horizontal = new Vector3(head.transform.forward.x, 0, head.transform.forward.z);
+                Vector3 head_forward_vertical = new Vector3(0, head.transform.forward.y, head.transform.forward.z);
+                Vector3 dir = controller.transform.position - head.transform.position;
+
+                if (Vector3.Distance(head.transform.position, controller.transform.position) < 0.6f
+                    && Vector3.Distance(head.transform.position, controller.transform.position) > 0.25f &&
+                    Vector3.Angle(head.transform.forward, dir) < 45)
                 {
                     transform.position = controller.transform.position;
                 }
-            }
-            float y_axis_left = Input.GetAxis("Oculus_GearVR_LThumbstickY");
-            if (y_axis_left != 0)
-            {
-                float scale_speed = y_axis_left / 1;
-                float new_scale = scale_speed + transform.localScale.x;
-                if (new_scale > 100)
+
+                float y_axis;
+
+                if (controller.name == "RightHand")
                 {
-                    new_scale = 100;
+                    y_axis = Input.GetAxis("Oculus_GearVR_RThumbstickY");
                 }
-                else if (new_scale < 1)
+                else if (controller.name == "LeftHand")
                 {
-                    new_scale = 1;
+                    y_axis = Input.GetAxis("Oculus_GearVR_LThumbstickY");
                 }
-                transform.localScale = new Vector3(new_scale, new_scale, new_scale);
+                else
+                {
+                    y_axis = 0;
+                    Debug.Log("uhoh");
+                }
+
+                if (y_axis != 0)
+                {
+                    float new_scale = y_axis + transform.localScale.x;
+                    if (new_scale > 100)
+                    {
+                        new_scale = 100;
+                    }
+                    else if (new_scale < 10)
+                    {
+                        new_scale = 10;
+                    }
+                    transform.localScale = new Vector3(new_scale, new_scale, new_scale);
+                }
             }
         }
-
-
 	}
 
     public void dragThingy()

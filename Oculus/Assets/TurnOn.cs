@@ -6,15 +6,18 @@ public class TurnOn : MonoBehaviour
 {
     public GameObject canvas;
     public GameObject red;
-	void Update ()
+	void Update()
     {
-        if (canvas.activeInHierarchy)
+        if (canvas && red)
         {
-            red.SetActive(true);
-        }
-        else
-        {
-            red.SetActive(false);
+            if (canvas.activeInHierarchy)
+            {
+                red.SetActive(true);
+            }
+            else
+            {
+                red.SetActive(false);
+            }
         }
 	}
 }
