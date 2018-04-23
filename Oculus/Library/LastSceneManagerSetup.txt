@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Main.unity
+- path: Assets/voxel_scifi_free/voxel_pack.unity
   isLoaded: 1
   isActive: 1

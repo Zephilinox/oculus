@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oculus", "Oculus.csproj", "{7E260FEA-7018-A934-BA87-4FAE7BA74D6B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oculus.Editor", "Oculus.Editor.csproj", "{7593A5A3-7D1F-E3B1-1C5C-91A02C605A36}"

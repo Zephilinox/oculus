@@ -1,0 +1,10 @@
+-Fonts sourced from Dafont.com
+-Audio from youtube.com
+-Voxel environment by Trilobite_mx https://assetstore.unity.com/packages/3d/environments/sci-fi/voxel-scifi-environment-free-version-101492
+- Log horizon UI https://kaabiiqbal.deviantart.com/art/Log-Horizon-Blank-UI-Status-495545795
+- Glasses https://poly.google.com/view/9i5mmOwt7cu
+
+Also used:
+- OVR plugin
+- Newton VR
+- Unity standard assets
